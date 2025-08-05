@@ -32,10 +32,14 @@ const swiperHome = new Swiper('.home__swiper', {
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        renderBullet: function(index, className) {
-            return ',span class="' + className +'">' + (index + 1) + "</span>";
+        renderBullet: (index, className) => {
+            return ',span class="' + className +'">' + String(index + 1).padStart(2, 'o0') + "</span>";
         },
     },
+
+    //autoplay: {
+    //    delay:5000,
+    //}
 })
 
 
