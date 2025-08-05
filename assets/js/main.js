@@ -1,4 +1,4 @@
-/*=============== SHOW MENU ===============*/
+s/*=============== SHOW MENU ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close')
@@ -28,6 +28,15 @@ const linkAction = () =>{
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*=============== SWIPER HOME ===============*/ 
+const swiperHome = new Swiper('.home__swiper', {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function(index, className) {
+            return ',span class="' + className +'">' + (index + 1) + "</span>";
+        },
+    },
+})
 
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
