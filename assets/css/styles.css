@@ -230,7 +230,10 @@ width: 60%;
 
 
 /* Change background header */
-
+.bg-header{
+  background-color: var(--body-color);
+  box-shadow: 0 4px 16px  hsla(0, 0%, 0%, .1);
+}
 
 /* Active link */
 
@@ -346,9 +349,15 @@ width: 60%;
 
 /*=============== BUTTON ===============*/
 
-
 /*=============== ABOUT ===============*/
+.about{
+  background-color: var(--body-second-color);
+}
 
+.about__container{
+  padding-bottom: 3rem;
+  row-gap: 3rem;
+}
 
 /*=============== MODELS ===============*/
 
